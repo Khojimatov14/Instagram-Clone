@@ -14,6 +14,13 @@
 		E468FD512702ACC400D05651 /* Instagram_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E468FD4F2702ACC400D05651 /* Instagram_Clone.xcdatamodeld */; };
 		E468FD532702ACC400D05651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E468FD522702ACC400D05651 /* Assets.xcassets */; };
 		E468FD562702ACC400D05651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E468FD542702ACC400D05651 /* LaunchScreen.storyboard */; };
+		E468FD612702ACFD00D05651 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468FD5F2702ACFD00D05651 /* HomeViewController.swift */; };
+		E468FD622702ACFD00D05651 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E468FD602702ACFD00D05651 /* HomeViewController.xib */; };
+		E468FD652702AD0E00D05651 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468FD632702AD0E00D05651 /* SignUpViewController.swift */; };
+		E468FD662702AD0E00D05651 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E468FD642702AD0E00D05651 /* SignUpViewController.xib */; };
+		E468FD692702AD1D00D05651 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468FD672702AD1D00D05651 /* SignInViewController.swift */; };
+		E468FD6A2702AD1D00D05651 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E468FD682702AD1D00D05651 /* SignInViewController.xib */; };
+		E468FD6C2702BEA000D05651 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468FD6B2702BEA000D05651 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		E468FD522702ACC400D05651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E468FD552702ACC400D05651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E468FD572702ACC400D05651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E468FD5F2702ACFD00D05651 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E468FD602702ACFD00D05651 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E468FD632702AD0E00D05651 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E468FD642702AD0E00D05651 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		E468FD672702AD1D00D05651 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E468FD682702AD1D00D05651 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		E468FD6B2702BEA000D05651 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,39 @@
 		E468FD452702ACC400D05651 /* Instagram Clone */ = {
 			isa = PBXGroup;
 			children = (
+				E468FD5E2702ACE700D05651 /* Controllers */,
+				E468FD5D2702ACCD00D05651 /* AppBox */,
 				E468FD462702ACC400D05651 /* AppDelegate.swift */,
 				E468FD482702ACC400D05651 /* SceneDelegate.swift */,
-				E468FD4A2702ACC400D05651 /* ViewController.swift */,
+				E468FD572702ACC400D05651 /* Info.plist */,
+			);
+			path = "Instagram Clone";
+			sourceTree = "<group>";
+		};
+		E468FD5D2702ACCD00D05651 /* AppBox */ = {
+			isa = PBXGroup;
+			children = (
 				E468FD4C2702ACC400D05651 /* Main.storyboard */,
 				E468FD522702ACC400D05651 /* Assets.xcassets */,
 				E468FD542702ACC400D05651 /* LaunchScreen.storyboard */,
-				E468FD572702ACC400D05651 /* Info.plist */,
+				E468FD4A2702ACC400D05651 /* ViewController.swift */,
 				E468FD4F2702ACC400D05651 /* Instagram_Clone.xcdatamodeld */,
 			);
-			path = "Instagram Clone";
+			path = AppBox;
+			sourceTree = "<group>";
+		};
+		E468FD5E2702ACE700D05651 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E468FD6B2702BEA000D05651 /* BaseViewController.swift */,
+				E468FD5F2702ACFD00D05651 /* HomeViewController.swift */,
+				E468FD602702ACFD00D05651 /* HomeViewController.xib */,
+				E468FD672702AD1D00D05651 /* SignInViewController.swift */,
+				E468FD682702AD1D00D05651 /* SignInViewController.xib */,
+				E468FD632702AD0E00D05651 /* SignUpViewController.swift */,
+				E468FD642702AD0E00D05651 /* SignUpViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +164,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E468FD662702AD0E00D05651 /* SignUpViewController.xib in Resources */,
 				E468FD562702ACC400D05651 /* LaunchScreen.storyboard in Resources */,
 				E468FD532702ACC400D05651 /* Assets.xcassets in Resources */,
 				E468FD4E2702ACC400D05651 /* Main.storyboard in Resources */,
+				E468FD6A2702AD1D00D05651 /* SignInViewController.xib in Resources */,
+				E468FD622702ACFD00D05651 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E468FD692702AD1D00D05651 /* SignInViewController.swift in Sources */,
+				E468FD652702AD0E00D05651 /* SignUpViewController.swift in Sources */,
+				E468FD612702ACFD00D05651 /* HomeViewController.swift in Sources */,
 				E468FD4B2702ACC400D05651 /* ViewController.swift in Sources */,
 				E468FD472702ACC400D05651 /* AppDelegate.swift in Sources */,
+				E468FD6C2702BEA000D05651 /* BaseViewController.swift in Sources */,
 				E468FD512702ACC400D05651 /* Instagram_Clone.xcdatamodeld in Sources */,
 				E468FD492702ACC400D05651 /* SceneDelegate.swift in Sources */,
 			);
